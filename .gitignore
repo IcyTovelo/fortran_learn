@@ -1,0 +1,13 @@
+# 忽略编译生成的中间文件
+*.o
+*.mod
+*.smod
+
+# 忽略可执行文件 (Mac/Linux 通常没有后缀，Windows 是 .exe)
+*.exe
+hello
+a.out
+
+# 忽略 VS Code 的配置文件夹
+.vscode/
+.DS_Store
