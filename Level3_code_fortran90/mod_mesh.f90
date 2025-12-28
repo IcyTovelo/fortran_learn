@@ -56,6 +56,11 @@ module mod_mesh
     ! 总外力向量 Q_total
     real(dp), allocatable :: Q_total(:)
 
+    ! ... (接在 Q_total 下面)
+
+    ! 单元应力 (Element Stress)
+    real(dp), allocatable :: element_stress(:)
+
 contains
 
     ! 这里以后可以放一些清理内存的子程序
