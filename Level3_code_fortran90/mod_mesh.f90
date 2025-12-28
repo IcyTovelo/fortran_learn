@@ -43,6 +43,19 @@ module mod_mesh
     ! 全局刚度矩阵 K (Global Stiffness Matrix)
     real(dp), allocatable :: K_global(:,:)  ! 二维数组
 
+    ! ... (接在 K_global 下面)
+
+    ! --- 计算结果变量 ---
+    
+    ! 节点位移向量 D (Displacement)
+    real(dp), allocatable :: D(:)
+    
+    ! 热荷载向量 Q0 (Thermal Load)
+    real(dp), allocatable :: Q0(:)
+    
+    ! 总外力向量 Q_total
+    real(dp), allocatable :: Q_total(:)
+
 contains
 
     ! 这里以后可以放一些清理内存的子程序
