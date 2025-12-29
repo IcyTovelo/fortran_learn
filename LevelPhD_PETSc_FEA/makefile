@@ -18,15 +18,15 @@ include ${PETSC_DIR}/lib/petsc/conf/rules
 
 # ==============================================================================
 # 4. Source Files (EXPLICIT ORDER)
-# Crucial: Modules must be compiled BEFORE the files that use them.
 # ==============================================================================
 SOURCES = mod_globals.F90 \
           mod_mesh.F90 \
           mod_io.F90 \
           mod_stiffness.F90 \
           mod_solver.F90 \
+          mod_post.F90 \
           main.F90
-
+		  
 OBJECTS = $(SOURCES:.F90=.o)
 
 # ==============================================================================
