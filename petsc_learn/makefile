@@ -20,6 +20,10 @@ ex3: ex3.o
 	-${FLINKER} -o ex3 ex3.o ${PETSC_LIB} ${EXTRA_LIB_PATH}
 	${RM} ex3.o
 
-# 清理命令
+# ex4 (新增！KSP求解器)
+ex4: ex4.o
+	-${FLINKER} -o ex4 ex4.o ${PETSC_LIB} ${EXTRA_LIB_PATH}
+	${RM} ex4.o
+
 clean_files:
-	${RM} ex1 ex2 ex3
+	${RM} ex1 ex2 ex3 ex4
